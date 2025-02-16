@@ -1,5 +1,8 @@
-import React, { use, useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import FarmImage from '../../assets/farm/farm.webp';
+import smallPlantImage from '../../assets/farm/small-plant.webp';
+import mediumPlantImage from '../../assets/farm/medium-plant.webp';
+import bigPlantImage from '../../assets/farm/big-plant.webp';
 
 const Farm = ({ player, setPlayer }) => {
     const progressBar = useRef(null);
@@ -133,7 +136,13 @@ const Farm = ({ player, setPlayer }) => {
                 >
                     <div className="w-full h-full bg-radial from-40% to-black opacity-80" />
                 </div>
-            </div>
+                {player.farmState === 'plant' ? (
+                <img src={smallPlantImage} alt="plant" className="max-h-4/5 drop-shadow-[0_30px_60px_rgba(0,0,0,0.75)] absolute bottom-[-15px] left-1/2 transform -translate-x-1/2" />
+                ) : player.farmState === 'water' || player.farmState === 'harvest' ? (
+                <img src={bigPlantImage} alt="plant" className="max-h-4/5 drop-shadow-[0_30px_60px_rgba(0,0,0,0.75)] absolute bottom-[-15px] left-1/2 transform -translate-x-1/2" />
+                ) : null}
+
+                </div>
             <div id="game-controls" className="h-8/48 bg-gray-700 grid grid-cols-3 p-4 gap-2 text-2xl relative">
                 {isActionPending && (
                     <div className="absolute top-0 left-0 w-full h-full bg-[#36415390] flex justify-center items-center">
