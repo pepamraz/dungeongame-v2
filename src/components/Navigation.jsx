@@ -3,8 +3,10 @@ import NavigationItem from './NavigationItem'
 
 const Navigation = () => {
   return (
-    <div className='w-full bg-gray-900 h-1/8 rounded-b-lg flex items-center px-3'>
-        <NavigationItem title='Home' image='home'/>
+    <div className='w-full bg-gray-900 h-1/8 rounded-b-lg flex items-center px-3 gap-3'>
+        <NavigationItem title='Cave' image='home'/>
+        <NavigationItem title='Shop' image='home'/>
+        <NavigationItem title='Profile' image='home'/>
     </div>
   )
 }
