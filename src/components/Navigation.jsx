@@ -1,5 +1,9 @@
 import React from 'react'
 import NavigationItem from './NavigationItem'
+import CaveIcon from '../assets/caves/cave-1.webp'
+import ShopIcon from '../assets/shop/shop.webp'
+import ProfileIcon from '../assets/player-avatar-head.webp'
+import FarmIcon from '../assets/farm/farm.webp'
 
 const Navigation = ({ setSelectedPlace }) => {
 
@@ -9,10 +13,10 @@ const Navigation = ({ setSelectedPlace }) => {
 
   return (
     <div className='w-full bg-gray-900 h-1/8 rounded-b-lg flex items-center px-3 gap-3'>
-        <NavigationItem onClick={() => handleNavigation('cave')} title='Cave' image='/src/assets/caves/cave-1.webp'/>
-        <NavigationItem onClick={() => handleNavigation('shop')} title='Shop' image='/src/assets/shop/shop.webp'/>
-        <NavigationItem onClick={() => handleNavigation('profile')} title='Profile' image='/src/assets/player-avatar-head.webp'/>
-        <NavigationItem onClick={() => handleNavigation('farm')} title='Farm' image='/src/assets/farm/farm.webp'/>
+        <NavigationItem onClick={() => handleNavigation('cave')} title='Cave' image={CaveIcon}/>
+        <NavigationItem onClick={() => handleNavigation('shop')} title='Shop' image={ShopIcon}/>
+        <NavigationItem onClick={() => handleNavigation('profile')} title='Profile' image={ProfileIcon}/>
+        <NavigationItem onClick={() => handleNavigation('farm')} title='Farm' image={FarmIcon}/>
     </div>
   )
 }

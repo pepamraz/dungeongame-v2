@@ -10,7 +10,6 @@ const Farm = ({ player, setPlayer }) => {
     const [farmStateNow, setFarmStateNow] = useState('Nothing planted here.');
 
     useEffect(() => {
-        console.log(player.farmState, player.farmTimeEnd);
         if (player.farmState === 'plant' && player.farmTimeEnd > Date.now()) {
             setFarmStateNow('Planting...');
         } else if (player.farmState === 'plant' && player.farmTimeEnd <= Date.now()) {
