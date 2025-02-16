@@ -11,7 +11,7 @@ const PlayerStats = ({player}) => {
         <p>{player.name}</p>
         <div className="player-stat flex justify-between items-center">
             <img src={MoneyIcon} width={32} className='inline'/>
-            <span>${player.money}</span>
+            <span>${player.money.toFixed(2)}</span>
         </div>
         <div className="player-stat flex justify-between items-center">
             <img src={EnergyIcon} width={32} className='inline'/>
