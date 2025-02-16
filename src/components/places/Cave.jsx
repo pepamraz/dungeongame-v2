@@ -153,14 +153,14 @@ const Cave = ({ player, setPlayer }) => {
                 <p>Cave: #{player.roomCount}</p>
             </div>
             <div id="game-graphics" className="h-39/48 bg-gray-500 rounded-t-lg relative overflow-hidden">
-                <div className="h-full" style={{ backgroundImage: `url(/src/assets/caves/cave-${caveImage}.webp)`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                <div className="h-full" style={{ backgroundImage: `url(${require(`../../assets/caves/cave-${caveImage}.webp`)})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
                     <div className="w-full h-full bg-radial from-40% to-black opacity-80" />
                 </div>
                 {player.roomType === 'zombie' && (
-                    <img src={`/src/assets/zombies/zombie-${zombieSkin}.webp`} alt="zombie" className="max-h-4/5 drop-shadow-[0_30px_60px_rgba(0,0,0,0.75)] absolute bottom-[-15px] left-1/2 transform -translate-x-1/2" />
+                    <img src={require(`../../assets/zombies/zombie-${zombieSkin}.webp`)} alt="zombie" className="max-h-4/5 drop-shadow-[0_30px_60px_rgba(0,0,0,0.75)] absolute bottom-[-15px] left-1/2 transform -translate-x-1/2" />
                 )}
                 {player.roomType === 'diamond' && (
-                    <img src={`/src/assets/diamonds/diamond-${player.diamondUpgrade}.webp`} alt="diamond" className="max-h-2/5 drop-shadow-[0_30px_60px_rgba(0,0,0,0.75)] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
+                    <img src={require(`../../assets/diamonds/diamond-${player.diamondUpgrade}.webp`)} alt="diamond" className="max-h-2/5 drop-shadow-[0_30px_60px_rgba(0,0,0,0.75)] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
                 )}
             </div>
             <div id="game-controls" className="h-8/48 bg-gray-700 grid grid-cols-3 p-4 gap-2 text-4xl relative">

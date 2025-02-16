@@ -1,5 +1,6 @@
 {
   "name": "dungeongame-v2",
+  "homepage": "https://pepamraz.github.io/dungeongame-v2/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,10 +8,12 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "vite build && gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.6",
+    "gh-pages": "^6.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tailwindcss": "^4.0.6"
