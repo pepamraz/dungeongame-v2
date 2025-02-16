@@ -2,6 +2,7 @@ import React from 'react'
 import Cave from './places/Cave';
 import Shop from './places/Shop';
 import Profile from './places/Profile';
+import Farm from './places/Farm';
 
 const Game = ({player, setPlayer, selectedPlace}) => {
 
@@ -10,6 +11,7 @@ const Game = ({player, setPlayer, selectedPlace}) => {
         {selectedPlace === 'cave' && <Cave player={player} setPlayer={setPlayer}/>}
         {selectedPlace === 'shop' && <Shop player={player} setPlayer={setPlayer} />}
         {selectedPlace === 'profile' && <Profile player={player} setPlayer={setPlayer} />}
+        {selectedPlace === 'farm' && <Farm player={player} setPlayer={setPlayer} />}
     </div>
   )
 }

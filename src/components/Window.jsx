@@ -20,6 +20,8 @@ const Window = () => {
       moneyMade: 0,
       moneySpent: 0,
       zombiesKilled: 0,
+      farmState: 'none',
+      farmTimeEnd: 0,
     };
   }
 

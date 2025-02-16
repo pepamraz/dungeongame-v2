@@ -12,6 +12,7 @@ const Navigation = ({ setSelectedPlace }) => {
         <NavigationItem onClick={() => handleNavigation('cave')} title='Cave' image='/src/assets/caves/cave-1.webp'/>
         <NavigationItem onClick={() => handleNavigation('shop')} title='Shop' image='/src/assets/shop/shop.webp'/>
         <NavigationItem onClick={() => handleNavigation('profile')} title='Profile' image='/src/assets/player-avatar-head.webp'/>
+        <NavigationItem onClick={() => handleNavigation('farm')} title='Farm' image='/src/assets/farm/farm.webp'/>
     </div>
   )
 }
