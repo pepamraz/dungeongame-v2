@@ -1,5 +1,9 @@
 {
     "require": {
-        "symfony/security-bundle": "^7.2"
+        "symfony/security-bundle": "^7.2",
+        "doctrine/dbal": "^4.2"
+    },
+    "require-dev": {
+        "symfony/maker-bundle": "^1.62"
     }
 }
