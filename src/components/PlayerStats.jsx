@@ -4,9 +4,9 @@ import EnergyIcon from '../assets/icons/energy-bolt-icon.webp';
 import MoneyIcon from '../assets/icons/gold-coins-money.webp';
 import HeartIcon from '../assets/icons/hp-icon.webp';
 
-const PlayerStats = ({player}) => {
+const PlayerStats = ({player, setSelectedPlace}) => {
   return (
-    <div id='player-stats' className='flex flex-col gap-1'>
+    <div id='player-stats' className='flex flex-col gap-1 cursor-pointer' onClick={() => setSelectedPlace('profile')}>
         <img src={PlayerHead} width={100} alt='player avatar' className='rounded-lg'/>
         <p>{player.name}</p>
         <div className="player-stat flex justify-between items-center">
