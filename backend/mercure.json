@@ -1,0 +1,6 @@
+{
+  "storage": {
+    "module": "sqlite",
+    "dsn": "mercure.db"
+  }
+}
